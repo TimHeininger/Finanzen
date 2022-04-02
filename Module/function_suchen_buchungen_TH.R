@@ -10,6 +10,11 @@ label_suche_TH<-function(label,exakt_enthaelt = TRUE){
       ergebnis
   }
   
+  ergebnis %>% 
+    arrange(desc(Datum))  ->
+    ergebnis
+  
+  #ergebnis<-as.data.frame(ergebnis)
   return(ergebnis)
 }
 

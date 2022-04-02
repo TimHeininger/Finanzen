@@ -7,14 +7,11 @@ function(input, output, session){
 #' ------------------------------------------------------------------------------------------------------------------------  
   
   label_buchungen<- reactive({
-    label_suche_TH(input$buchung_erstellen_label)
+    label_suche_TH(input$buchung_erstellen_label) ->
+      table_buchungen
     })
   
-  output$buchungen_erzeugen_table_buchungen<-renderTable(label_buchungen,
-                                                         striped = FALSE,
-                                                         hover = TRUE,
-                                                         bordered = FALSE,
-                                                         spacing = "s")
+  output$buchungen_erzeugen_table_buchungen<-renderDataTable(label_buchungen())
   
 
   
