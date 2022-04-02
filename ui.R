@@ -33,10 +33,10 @@ tagList(
   # Dashboard Grundgerüst ----
   #****************************************************************************************************************************************************
   
-  dashboardPage(title = "Planung Hochrechnung - IFRS17",
+  dashboardPage(title = "Abrrechnungssystem Tim Heininger",
                 
                 # Kopfzeile
-                dashboardHeader(title = div(img(src = "Logo.PNG", height = "25%", width = "25%", style = "margin: 0px 0px"), "Planung Hochrechnung"),
+                dashboardHeader(title = div(img(src = "Logo.PNG", height = "25%", width = "25%", style = "margin: 0px 0px"), "Abrrechnungssystem Tim Heininger"),
                                 tags$li(a(href = 'https://ruvnet.ruv.de/start/Seiten/default.aspx', img(src = "RuV_RGB_weiss.png", style = "margin: 0 0 0px; height: 50px"),
                                           style = "padding-top:0px; padding-bottom:0px; padding-right:4px;padding-left:0px; margin: 0 0 0px"),
                                         class = "dropdown",
