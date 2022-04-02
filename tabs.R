@@ -97,7 +97,11 @@ dropdownButton <<- function(label = "", status = c("default", "primary", "succes
   ),
   fluidPage(
     fluidRow(
-      textInput("buchung_erstellen_betrag_2",p("Label der Buchung"), value = "")
+      box(title = "Buchungen der letzten Zeit",
+          width = 18,
+          # tableOutput("buchungen_erzeugen_table_buchungen")
+          dataTableOutput("buchungen_erzeugen_table_buchungen")
+      )
     )
   )
 )
