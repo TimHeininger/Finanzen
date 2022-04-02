@@ -1,0 +1,16 @@
+label_suche<-function(label,exakt_enthaelt = TRUE){
+  
+}
+
+label<-"Internet"
+
+buchungen %>% 
+  filter(str_detect(Was,label)) ->d
+
+
+
+
+
+
+
+
