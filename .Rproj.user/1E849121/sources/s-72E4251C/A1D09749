@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/Finanzen/server.R",
     "project_path": "server.R",
     "type": "r_source",
-    "hash": "834047309",
+    "hash": "726340675",
     "contents": "",
     "dirty": false,
     "created": 1648901803602.0,
@@ -11,15 +11,15 @@
     "relative_order": 5,
     "properties": {
         "source_window_id": "wnqc45glo5hwc",
-        "cursorPosition": "4,2",
+        "cursorPosition": "13,72",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1648905487,
+    "lastKnownWriteTime": 1648906696,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1648905487016,
+    "last_content_update": 1648906696408,
     "read_only": false,
     "read_only_alternatives": []
 }

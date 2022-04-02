@@ -41,7 +41,10 @@ library(data.table)
 # .current_path <- rstudioapi::getSourceEditorContext()$path
 # try(setwd(dirname(.current_path)))
 
-.filename_daten<<-"~/Documents/Finanzen/Abrechnungssystem/Daten"
+.filename<<-"~/Documents/Finanzen/Abrechnungssystem"
+.pfad_r_code<<-"~/Documents/GitHub/Finanzen"
+.filename_daten<<- paste(.filename,"/Daten",sep = "")
+.filename_module<<-paste(.pfad_r_code,"Module", sep = "/")
 
 # buchungen<<-read.xlsx(paste(.filename_daten,"Buchungen.xlsx", sep = "/"), sheet = "Daten")
 # fwrite(buchungen,file = paste(.filename_daten,"Buchungen.csv", sep = "/"), dec = ",", sep = ";")
@@ -59,7 +62,7 @@ fread(paste(.filename_daten,"Buchungen.csv", sep = "/"), dec = ",", sep = ";") %
 # Funktionen 
 #****************************************************************************************************************************************************
 
-
+source(paste(.filename_module,'function_suchen_buchungen_TH.R', sep = "/"), encoding = "utf8")
 
 #****************************************************************************************************************************************************
 

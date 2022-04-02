@@ -1,4 +1,4 @@
-label_suche<-function(label,exakt_enthaelt = TRUE){
+label_suche_TH<-function(label,exakt_enthaelt = TRUE){
   
   if(exakt_enthaelt==TRUE){
     buchungen %>% 
@@ -10,7 +10,7 @@ label_suche<-function(label,exakt_enthaelt = TRUE){
       ergebnis
   }
   
-  
+  return(ergebnis)
 }
 
 

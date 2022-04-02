@@ -1,7 +1,20 @@
 function(input, output, session){
   
-  label_buchungen<- reactive(input$buchung_erstellen_label)
+#' ------------------------------------------------------------------------------------------------------------------------
+#' ------------------------------------------------------------------------------------------------------------------------
+# Buchungen erzeugen #### 
+#' ------------------------------------------------------------------------------------------------------------------------
+#' ------------------------------------------------------------------------------------------------------------------------  
   
+  label_buchungen<- reactive({
+    label_suche_TH(input$buchung_erstellen_label)
+    })
+  
+  output$buchungen_erzeugen_table_buchungen<-renderTable(label_buchungen,
+                                                         striped = FALSE,
+                                                         hover = TRUE,
+                                                         bordered = FALSE,
+                                                         spacing = "s")
   
 
   
